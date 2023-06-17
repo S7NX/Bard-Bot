@@ -34,7 +34,7 @@ Bard Bot enables you to integrate Google's Bard AI into your Discord server, all
 
 ### Usage
 
-When you have filled your `.env.example` and ran `npm install` in the terminal, you can start the bot by running `node .` or `node cluster.js`
+When you have filled your `.env.example` then you should rename it to `.env` and run `npm install` in the terminal, you can start the bot by running `node .` or `node cluster.js`
 
 ## Configuration
 
