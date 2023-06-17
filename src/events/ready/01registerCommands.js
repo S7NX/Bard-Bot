@@ -8,7 +8,7 @@ module.exports = async (client) => {
   try {
     client.user.setActivity({name:"Booting Up..."})
     const rest = new REST({ version: '9' }).setToken(process.env.TOKEN);
-    const clientId = process.env.CLIENTID;
+    const clientId = client.user.id;
 
     console.log(chalk.yellow('Started refreshing application (/) commands.'));
 
