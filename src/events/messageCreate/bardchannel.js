@@ -30,14 +30,14 @@ module.exports = async (client, message) => {
       const answer = (await getBardResponse(backstory)) || "No Comment.";
 
       if (answer.length <= 2000) {
-        message.reply(`${answer}`);
+        message.reply(`${JSON.stringify(answer)}`);
       } else {
         const parts = splitTextIntoParts(answer, 2000);
         for (let i = 0; i < parts.length; i++) {
           if (i === 0) {
-            message.channel.send(`${answer}`);
+            message.channel.send(`${JSON.stringify(answer)}`);
           } else {
-            await message.channel.send(`${answer}`);
+            await message.channel.send(`${JSON.stringify(answer)}`);
           }
         }
       }
