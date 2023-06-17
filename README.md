@@ -1,5 +1,6 @@
 # Bard Bot
 
+https://replit.com/new/github/S7NX/Bard-Bot
 Bard Bot is designed to help you use Google's Bard AI in your Discord server free of charge.
 
 ## Table of Contents
